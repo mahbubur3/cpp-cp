@@ -126,4 +126,42 @@ using namespace std;
 } */
 
 
-//? --------------------------------
+//! CONDITIONS
+/* int main() {
+    int x, y;
+    cin >> x;
+    cin >> y;
+
+    if (x > y) {
+        cout << "x is greater than y";
+    } else {
+        cout << "y is greater than x";
+    }
+
+    return 0;
+} */
+
+
+//! LOOP
+/* int main() {
+    for (int i = 1; i <= 5; i++) {
+        cout << i << " ";
+    }
+    
+    cout << "\n";
+
+    for (int i = 1; i <= 5; i++) {
+        cout << i << "\n";
+    }
+} */
+
+
+int main() {
+    int i = 1;
+    while (i <= 5) {
+        cout << i << "\n";
+        i++;
+    }
+
+    return 0;
+}
