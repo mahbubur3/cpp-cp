@@ -156,11 +156,31 @@ using namespace std;
 } */
 
 
+// int main() {
+//     int i = 1;
+//     while (i <= 5) {
+//         cout << i << "\n";
+//         i++;
+//     }
+
+//     return 0;
+// }
+
+
+/* int main() {
+    string cars[3] = {"bmw", "tesla", "ford"};
+    for (int i = 0; i < 3; i++) {
+        cout << cars[i] << "\n";
+    }
+
+    return 0;
+} */
+
+
 int main() {
-    int i = 1;
-    while (i <= 5) {
-        cout << i << "\n";
-        i++;
+    string cars[4] = {"bmw", "tesla", "ford", "mazda"};
+    for (int i = 0; i < 4; i++) {
+        cout << i << " = " << cars[i] << "\n";
     }
 
     return 0;
