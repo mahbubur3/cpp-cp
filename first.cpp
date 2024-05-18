@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 using namespace std;
 
 
@@ -101,3 +102,28 @@ using namespace std;
 
     return 0;
 } */
+
+
+//! DATA TYPES
+/* int main() {
+    int myInt = 10;
+    float myFloat = 5.59;
+    char myChar = 'M';
+
+    cout << "Int: " << myInt << "\n";
+    cout << "Float: " << myFloat << "\n";
+    cout << "Char: " << myChar << "\n";
+
+    return 0;
+} */
+
+// STRING
+/* int main() {
+    string g = "hello";
+    cout << g;
+
+    return 0;
+} */
+
+
+//? --------------------------------
