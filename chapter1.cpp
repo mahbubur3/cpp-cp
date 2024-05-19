@@ -1,5 +1,10 @@
-#include <iostream>
-#include <iomanip>
+// #include <iostream>
+// #include <iomanip>
+// #include <algorithm>
+// #include <utility>
+// #include <string.h>
+// #include <string> or
+#include <bits/stdc++.h> // Group header file
 using namespace std;
 
 
@@ -271,7 +276,7 @@ switch স্টেটমেন্টটি grade এর মানের সা�
 break স্টেটমেন্টটি নিশ্চিত করে যে পরবর্তী case গুলো চালানো হয় না।
 */
 
-int main() {
+/* int main() {
     char c;
     cin >> c;
 
@@ -294,6 +299,127 @@ int main() {
         default:
             cout << "Consonant";
     }
+
+    return 0;
+} */
+
+
+//! Built-in functions
+// min() & max()
+/* int main() {
+    int x, y;
+    cin >> x >> y;
+
+    int minimum = min(x, y); //? [Note: Need <algorithm> header file]
+    int maximum = max(x, y);
+
+    cout << minimum << " " << maximum;
+
+    return 0;
+} */
+
+/* int main() {
+    int a, b, c, d;
+    cin >> a >> b >> c >> d;
+
+    int findMaximum = max({a, b, c, d});
+    cout << findMaximum << endl;
+
+    return 0;
+} */
+
+/* void swapNumbers(int *a, int *b) {
+    int temp = *a;
+    *a = *b;
+    *b = temp;
+}
+
+int main() {
+    int a, b;
+    cin >> a >> b;
+    swapNumbers(&a, &b);
+    cout << a << " " << b << endl;
+
+    return 0;
+} */
+
+
+/* int main() {
+    int a, b;
+    cin >> a >> b;
+
+    swap(a, b); //? [Note: need <utility> header file]
+    cout << a << " " << b << endl;
+
+    return 0;
+} */
+
+
+//! Array input
+/* int main() {
+    int n;
+    cin >> n;
+
+    int a[n];
+    for (int i = 0; i < n; i++) {
+        cin >> a[i];
+    }
+
+    for (int i = 0; i < n; i++) {
+        cout << a[i] << endl;
+    }
+
+    return 0;
+} */
+
+//! String
+/* int main() {
+    char name[20];
+    cin >> name;
+    // cout << name << endl;
+
+    // Show size of string
+    cout << strlen(name) << endl;
+
+    return 0;
+} */
+
+//? Input string with space. In C we use fgets but in c++ we use cin.getline()
+/* int main() {
+    char name[20];
+    cin.getline(name, 50); //? [Note: need <string> header file]
+    cout << name;
+
+    return 0;
+} */
+
+
+//? If i need integer and string with space after integer i need getchar()
+/* int main() {
+    int age;
+    cin >> age;
+
+    char name[50];
+    getchar();
+    cin.getline(name, 50);
+
+    cout << "Age: " << age << endl;
+    cout << "Name: " << name << endl;
+
+    return 0;
+} */
+
+
+//? But if i need just string after integer without space just use simple way to take input
+int main() {
+    int age;
+    cin >> age;
+
+    char nickName[50];
+    cin >> nickName;
+
+    cout << "Age: " << age << endl;
+    cout << "Name: " << nickName << endl;
 
     return 0;
 }
