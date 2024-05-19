@@ -1,7 +1,5 @@
-#include <iostream>
-#include <string>
+#include <bits/stdc++.h>
 using namespace std;
-
 
 // int main() {
 //     cout << "Hello world\n"; //* cout - see-out
@@ -164,21 +162,24 @@ using namespace std;
 // }
 
 
-/* int main() {
-    string cars[3] = {"bmw", "tesla", "ford"};
-    for (int i = 0; i < 3; i++) {
-        cout << cars[i] << "\n";
-    }
+// int main() {
+//     int n = 100;
+//     int* ptr = &n;
 
-    return 0;
-} */
+//     cout << "Address of n: " << &n << endl;
+//     cout << "Value of n: " << n << endl;
+
+//     return 0;
+// }
 
 
-int main() {
-    string cars[4] = {"bmw", "tesla", "ford", "mazda"};
-    for (int i = 0; i < 4; i++) {
-        cout << i << " = " << cars[i] << "\n";
-    }
 
-    return 0;
-}
+// void greating() {
+//     cout << "Good Morning" << endl;
+// }
+
+// int main() {
+//     greating();
+
+//     return 0;
+// }
