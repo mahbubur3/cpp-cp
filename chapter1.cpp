@@ -1,4 +1,5 @@
 #include <iostream>
+#include <iomanip>
 using namespace std;
 
 
@@ -63,3 +64,80 @@ using namespace std;
 } */
 
 
+//! Type casting
+/* int main() {
+    // Show ascii value
+    // char c;
+    // cin >> c;
+    // int asc = c; //? Convert to integer
+    // cout << asc << endl;
+
+    char c;
+    cin >> c;
+    cout << int(c) << endl;
+
+    return 0;
+} */
+
+
+//! EOF in C or Test case
+/* int main() {
+    int a, b;
+    while (scanf("%d %d", &a, &b) != EOF) {
+        printf("%d %d", a, b);
+    }
+
+    return 0;
+} */
+
+/* //! EOF in C
+int main() {
+    int a, b;
+    while (cin >> a >> b) {
+        cout << a << " " << b << endl;
+    }
+
+    return 0;
+} */
+
+
+//! Setprecision (Show number after decimal)
+/* int main() {
+    double n;
+    cin >> n;
+    cout << fixed << setprecision(2) << n << endl;
+
+    double n2;
+    cin >> n2;
+    cout << fixed << setprecision(3) << n2 << endl;
+
+    return 0;
+} */
+
+
+//! If Else
+/* int main() {
+    int a, b;
+    cin >> a >> b;
+
+    if (a == b) {
+        cout << "Equal" << endl;
+    } else {
+        cout << "Not equal" << endl;
+    }
+
+    return 0;
+} */
+
+/* int main() {
+    int x, y;
+    cin >> x >> y;
+
+    if (x > y) {
+        cout << "x is greater than y";
+    } else {
+        cout << "y is greater than x";
+    }
+
+    return 0;
+} */

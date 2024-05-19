@@ -82,8 +82,7 @@ using namespace std;
 
 /* int main() {
     int a, b;
-    cin >> a;
-    cin >> b;
+    cin >> a >> b;
 
     int result = a + b;
     cout << "Summation = " << result;
@@ -94,8 +93,7 @@ using namespace std;
 
 /* int main() {
     int x, y;
-    cin >> x;
-    cin >> y;
+    cin >> x >> y;
 
     int difference = x - y;
     cout << "Result = " << difference;
@@ -129,8 +127,7 @@ using namespace std;
 //! CONDITIONS
 /* int main() {
     int x, y;
-    cin >> x;
-    cin >> y;
+    cin >> x >> y;
 
     if (x > y) {
         cout << "x is greater than y";
