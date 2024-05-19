@@ -101,7 +101,7 @@ int main() {
 } */
 
 
-//! Setprecision (Show number after decimal)
+//! Setprecision (Show number after decimal) [Note: need <iomanip> header file]
 /* int main() {
     double n;
     cin >> n;
@@ -141,3 +141,159 @@ int main() {
 
     return 0;
 } */
+
+
+//! Ternary operator
+/* int main() {
+    int x, y;
+    cin >> x >> y;
+
+    (x == y) ? cout << "Equal" << endl : cout << "Not Equal" << endl;
+
+    return 0;
+} */
+
+/* int main() {
+    int n;
+    cin >> n;
+
+    (n % 2 == 0) ? cout << "Even" : cout << "Odd";
+
+    return 0;
+} */
+
+
+//! Switch case
+/* int main() {
+    int n = 3;
+
+    if (n == 1) {
+        cout << "One";
+    } else if (n == 2) {
+        cout << "Two";
+    } else if (n == 3) {
+        cout << "Three";
+    } else if (n == 4) {
+        cout << "Four";
+    } else if (n == 5) {
+        cout << "Five";
+    } else {
+        cout << "Not found";
+    }
+
+    return 0;
+} */
+
+/* 
+switch (expression) {
+  case value1:
+    // code to execute if expression == value1
+    break;
+  case value2:
+    // code to execute if expression == value2
+    break;
+  // ... more cases
+  default:
+    // code to execute if expression doesn't match any case
+    break;
+}
+expression: এটি একটি ভেরিয়েবল যা একটি মান ফেরত দেয়।
+case: প্রতিটি case লেবেলটি একটি মান নির্দেশ করে যার সাথে expression এর মান তুলনা করা হয়।
+break: break স্টেটমেন্টটি নিশ্চিত করে যে একবার একটি case ম্যাচ হয়, তাহলে পরবর্তী case গুলো আর চালানো হয় না।
+default: default লেবেলটি ঐ ক্ষেত্রে কোড চালানোর জন্য যেখানে expression এর মান কোনো case লেবেলের সাথে মেলে না।
+*/
+
+/* int main() {
+    int n = 4;
+
+    switch (n) {
+        case 1:
+            cout << "one";
+            break;
+        case 2:
+            cout << "two";
+            break;
+        case 3:
+            cout << "three";
+            break;
+        case 4:
+            cout << "four";
+            break;
+        case 5:
+            cout << "five";
+            break;
+        default:
+            cout << "not found";
+    }
+
+    return 0;
+} */
+
+/* int main() {
+    int n;
+    cin >> n;
+
+    switch (n % 2) { //? n%2 there store 0 or 1 if 4%2==0 then print even otherwise odd
+        case 0:
+            cout << "Even";
+            break;
+        case 1:
+            cout << "Odd";
+            break;
+    }
+
+    return 0;
+} */
+
+/* int main() {
+    char grade = 'A';
+
+    switch (grade) {
+        case 'A':
+            cout << "Excellent" << endl;
+            break;
+        case 'B':
+            cout << "Very good" << endl;
+            break;
+        case 'C':
+            cout << "Good" << endl;
+            break;
+        default:
+            cout << "Invalid grade" << endl;
+    }
+
+    return 0;
+} */
+/*
+grade ভেরিয়েবলটির মান 'A'।
+switch স্টেটমেন্টটি grade এর মানের সাথে case লেবেলগুলির সাথে তুলনা করে।
+যেহেতু grade এর মান 'A' এবং এটি case 'A': এর সাথে মেলে, তাই "Excellent!" মেসেজটি প্রিন্ট হয়।
+break স্টেটমেন্টটি নিশ্চিত করে যে পরবর্তী case গুলো চালানো হয় না।
+*/
+
+int main() {
+    char c;
+    cin >> c;
+
+    switch(c) {
+        case 'a':
+            cout << "Vowel";
+            break;
+        case 'e':
+            cout << "Vowel";
+            break;
+        case 'i':
+            cout << "Vowel";
+            break;
+        case 'o':
+            cout << "Vowel";
+            break;
+        case 'u':
+            cout << "Vowel";
+            break;
+        default:
+            cout << "Consonant";
+    }
+
+    return 0;
+}
