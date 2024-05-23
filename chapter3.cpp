@@ -203,7 +203,7 @@ int main() {
 */
 
 
-// RETURN OBJECT FROM FUNCTion
+// Return object from function [Note: This work like normal variable not like array]
 /*
 class Student {
     public:
@@ -232,7 +232,37 @@ int main() {
 }
 */
 
+
+// Return object pointer [When we return pointer object the object will delete that's why we need dynamic object]
+// [Note: We cannot return array from function without dynamic array so if we need to return pointer we need dynamic object]
+class Student {
+    public:
+        int roll;
+        double gpa;
+        
+        Student(int roll, double gpa) {
+            this->roll = roll;
+            this->gpa = gpa;
+        }
+};
+
+Student* info() {
+    Student* john = new Student(3, 3.98);
+    
+    return john;
+}
+
+int main() {
+    Student* result = info();
+    cout << result->roll << " " << result->gpa << endl;
+    delete result;
+    
+    return 0;
+}
+
+
 // Sort array using sort()
+/*
 int main() {
     int n;
     cin >> n;
@@ -251,8 +281,79 @@ int main() {
     
     return 0;
 }
+*/
 
 
+// Create dynamic object
+/*
+class Student {
+    public:
+        int roll;
+        double gpa;
+        
+        Student(int roll, double gpa) {
+            this->roll = roll;
+            this->gpa = gpa;
+        }
+};
+
+int main() {
+    Student* john = new Student(2, 3.33);
+    
+    cout << john->roll << " " << john->gpa << endl;
+    
+    return 0;
+}
+*/
+/*
+class Employees {
+    public:
+        int id;
+        int salary;
+        
+        Employees(int id, int salary) {
+            this->id = id;
+            this->salary = salary;
+        }
+};
+
+int main() {
+    Employees* john = new Employees(1001, 2200);
+    cout << john->id << " " << john->salary << endl;
+    
+    return 0;
+}
+*/
+
+
+/*
+class Student {
+    public:
+        int roll;
+        double gpa;
+        
+        Student(int roll, double gpa) {
+            this->roll = roll;
+            this->gpa = gpa;
+        }
+};
+
+Student* info() {
+    Student* john = new Student(50, 3.33);
+    
+    return john;
+}
+
+int main() {
+    Student* result = info();
+    
+    cout << result->roll << " " << result->gpa << endl;
+    delete result;
+    // cout << result->roll << " " << result->gpa << endl;
+    
+    return 0;
+}
+*/
 
 // RUFF ===================== RUFF
 /*
