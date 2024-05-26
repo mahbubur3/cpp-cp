@@ -144,3 +144,152 @@ int main() {
 
     return 0;
 }
+
+
+
+// Chapter 3.5
+// Problem 1
+// class Student {
+//   public:
+//     char name[50];
+//     int roll;
+//     char section[10];
+//     int mathMarks;
+//     int cls;
+    
+//     Student(char* name, int roll, char* section, int mathMarks, int cls) {
+//       this->name = name;
+//       this->roll = roll;
+//       this->section = section;
+//       this->mathMarks = mathMarks;
+//       this->cls = cls;
+//     }
+// };
+
+// int main() {
+  
+  
+//   Student john, ray, jony;
+  
+//   char temp[50] = "John";
+//   strcpy(john.name, temp);
+  
+//   john.roll = 20;
+//   char tempTwo[10] = "AB";
+//   strcpy(john.section, tempTwo);
+//   john.mathMarks = 97;
+//   john.cls = 9;
+  
+//   char tempThree[50] = "Ray";
+//   strcpy(ray.name, tempThree);
+//   john.roll = 10;
+//   char tempFour[10] = "XY";
+//   strcpy(ray.section, tempFour);
+//   ray.mathMarks = 88;
+//   ray.cls = 9;
+  
+//   char tempFive[50] = "Jony";
+//   strcpy(jony.name, tempFive);
+//   jony.roll = 40;
+//   char tempSix[10] = "MN";
+//   strcpy(jony.section, tempSix);
+//   jony.mathMarks = 99;
+//   jony.cls = 9;
+  
+//   if (john.mathMarks > ray.mathMarks && john.mathMarks > jony.mathMarks) {
+//     cout << john.name;
+//   } else if (ray.mathMarks > john.mathMarks && ray.mathMarks > jony.mathMarks) {
+//     cout << ray.name;
+//   } else {
+//     cout << jony.name;
+//   }
+  
+//   return 0;
+// }
+
+
+
+
+class Student {
+  public:
+    char name[30];
+    int id;
+    
+    Student(const char* n, int i) {
+        strcpy(name, n);
+        id = i;
+    }
+};
+
+int main() {
+  Student mah("mahbubu", 9);
+  cout << mah.name << mah.id;
+  
+  return 0;
+}
+
+
+
+
+// class Student {
+//     public:
+//         int id;
+//         char name[50];
+//         double gpa;
+// };
+
+// int main() {
+//     Student a, b, c;
+    
+//     a.id = 95;
+//     char temp[50] = "mahbub";
+//     strcpy(a.name, temp);
+//     a.gpa = 3.33;
+    
+//     b.id = 86;
+//     char temp2[50] = "sakib";
+//     strcpy(b.name, temp2);
+//     b.gpa = 3.34;
+    
+//     c.id = 99;
+//     char temp3[50] = "shabab";
+//     strcpy(c.name, temp3);
+//     c.gpa = 3.19;
+    
+//     cout << a.id << " " << a.name << " " << a.gpa << endl;
+//     cout << b.id << " " << b.name << " " << b.gpa << endl;
+//     cout << c.id << " " << c.name << " " << c.gpa << endl;
+    
+//     return 0;
+// }
+
+
+// Problem 2
+#include <bits/stdc++.h>
+using namespace std;
+
+class Cricketer {
+  public:
+    int jerseyNo;
+    char country[50];
+};
+
+int main() {
+  Cricketer* dhoni = new Cricketer;
+  
+  dhoni->jerseyNo = 10;
+  char temp[50] = "India";
+  strcpy(dhoni->country, temp);
+  
+  Cricketer* kohli = new Cricketer;
+  
+  kohli->jerseyNo = dhoni->jerseyNo;
+  strcpy(kohli->country, dhoni->country);
+  
+  delete dhoni;
+  
+  cout << kohli->jerseyNo << endl;
+  cout << kohli->country << endl;
+  
+  return 0;
+}
