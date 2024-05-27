@@ -146,7 +146,6 @@ int main() {
 }
 
 
-
 // Chapter 3.5
 // Problem 1
 // class Student {
@@ -208,8 +207,6 @@ int main() {
 // }
 
 
-
-
 class Student {
   public:
     char name[30];
@@ -227,8 +224,6 @@ int main() {
   
   return 0;
 }
-
-
 
 
 // class Student {
@@ -292,4 +287,185 @@ int main() {
   cout << kohli->country << endl;
   
   return 0;
+}
+
+
+// Module 5 & 6 practice
+/* int main() {
+    // string str("Hello United!");
+    // cout << str << endl;
+
+    // string str("Bangladesh", 4);
+    // cout << str << endl;
+
+    // string x = "Bangladesh";
+    // string s(x, 4);
+    // cout << s << endl;
+
+    // string str(5, 'W');
+    // cout << str << endl;
+
+    // string str;
+    // // cin >> str;
+    // getline(cin, str);
+
+    // sort(str.begin(), str.end());
+    // cout << str << endl;
+
+    // string str;
+    // cin >> str;
+
+    // for (int i = 0; i < str.size(); i++) {
+    //     cout << str[i] << endl;
+    // }
+
+    // for (char c:str) {
+    //     cout << c << endl;
+    // }
+
+    return 0;
+} */
+
+
+// string name = "John";
+// string &studentName = name;
+// cout << studentName << endl;
+
+// void showText(string& s) {
+//     s = "Singapore";
+// }
+// int main() {
+//     string s = "Bangladesh";
+//     showText(s);
+//     cout << s << endl;
+//     return 0;
+// }
+
+/* int main() {
+    string s;
+    getline(cin, s);
+    stringstream ss(s);
+    string w;
+    while(ss >> w) {
+        cout << w << endl;
+    }
+    return 0;
+} */
+
+/* void showWords(stringstream& ss) {
+    string w;
+    if (ss >> w) {
+        cout << w << endl;
+        showWords(ss);
+    }
+}
+int main() {
+    string s;
+    getline(cin, s);
+
+    stringstream ss(s);
+    showWords(ss);
+
+    return 0;
+} */
+
+/* class Student {
+    public:
+        string name;
+        int age;
+
+        Student(string name, int age) {
+            this->name = name;
+            this->age = age;
+        }
+
+        void country() {
+            cout << "Country: " << "NZ" << endl;
+        }
+};
+
+int main() {
+    Student taylor("Taylor", 39);
+    cout << "Name: " << taylor.name << endl;
+    cout << "Age: " << taylor.age << endl;
+    taylor.country();
+
+    return 0;
+} */
+
+/* class Cricketer {
+    public:
+        int jerseyNo;
+        string country;
+};
+
+int main() {
+    Cricketer* dhoni = new Cricketer;
+    Cricketer* kohli = new Cricketer;
+
+    dhoni->jerseyNo = 10;
+    dhoni->country = "India";
+
+    *kohli = *dhoni;
+
+    delete dhoni;
+
+    cout << kohli->jerseyNo << endl;
+    cout << kohli->country << endl;
+
+    return 0;
+} */
+
+
+/* class Student {
+    public:
+        string name;
+        int id;
+        string major;
+        int mathMarks;
+
+        Student(string name, int id, string major, int mathMarks) {
+            this->name = name;
+            this->id = id;
+            this->major = major;
+            this->mathMarks = mathMarks;
+        }
+};
+
+int main() {
+    Student john("John", 191, "Embedded Systems", 98);
+    Student ray("ray", 838, "Biology", 95);
+    Student zack("zack", 229, "Physics", 99);
+
+    if (john.mathMarks > ray.mathMarks && john.mathMarks > zack.mathMarks) {
+        cout << john.name << endl;
+    } else if (ray.mathMarks > john.mathMarks && ray.mathMarks > zack.mathMarks) {
+        cout << ray.name << endl;
+    } else {
+        cout << zack.name << endl;
+    }
+
+    return 0;
+} */
+
+class Employee {
+    public:
+        string name;
+        int age;
+        int salary;
+        string department;
+
+        Employee(string name, int age, int salary, string department) {
+            this->name = name;
+            this->age = age;
+            this->salary = salary;
+            this->department = department;
+        }
+};
+
+int main() {
+    Employee* smith = new Employee("John Smith", 29, 2500, "Accounting");
+    cout << smith->name << endl;
+
+    return 0;
 }
