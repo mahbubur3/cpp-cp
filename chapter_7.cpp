@@ -147,3 +147,77 @@ int main() {
 
     return 0;
 } */
+
+// Sort array of objects using selection sort
+/* class Student {
+    public:
+        string name;
+        int roll;
+        int totalMarks;
+};
+
+int main() {
+    int n;
+    cin >> n;
+    
+    Student a[n];
+    for (int i = 0; i < n; i++) {
+        cin >> a[i].name >> a[i].roll >> a[i].totalMarks;
+    }
+    
+    // Ascending order
+    for (int i = 0; i < n - 1; i++) {
+        for (int j = i + 1; j < n; j++) {
+            if (a[i].roll > a[j].roll) { // This is sort according to roll you can use also marks. For descending order use '<'.
+                swap(a[i], a[j]);
+            }
+        }
+    }
+    
+    for (int i = 0; i < n; i++) {
+        cout << a[i].name << " " << a[i].roll << " "<< a[i].totalMarks << endl;
+    }
+    
+    return 0;
+} */
+
+
+// Question solve for mid-term
+/* class Student {
+    public:
+        string name;
+        int roll;
+        int totalMarks;
+};
+
+int main() {
+    int n;
+    cin >> n;
+    
+    Student a[n];
+    for (int i = 0; i < n; i++) {
+        cin >> a[i].name >> a[i].roll >> a[i].totalMarks;
+    }
+    
+    // Descending order
+    for (int i = 0; i < n - 1; i++) {
+        for (int j = i + 1; j < n; j++) {
+            // Swap
+            if (a[i].totalMarks < a[j].totalMarks) {
+                swap(a[i], a[j]);
+            }
+            // Check marks same or not
+            if (a[i].totalMarks == a[j].totalMarks) {
+                if (a[i].roll > a[j].roll) {
+                    swap(a[i], a[j]);
+                }
+            }
+        }
+    }
+    
+    for (int i = 0; i < n; i++) {
+        cout << a[i].name << " " << a[i].roll << " "<< a[i].totalMarks << endl;
+    }
+    
+    return 0;
+} */
