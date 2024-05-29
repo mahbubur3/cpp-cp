@@ -221,3 +221,35 @@ int main() {
     
     return 0;
 } */
+
+
+// Sort using built-in sort() function
+/* class Student {
+    public:
+        string name;
+        int roll;
+        int totalMarks;
+};
+
+bool cmp(Student a, Student b) {
+    // if (a.totalMarks <= b.totalMarks) { // For descending use '>='
+    //     return true;
+    // } else {
+    //     return false;
+    // }
+    
+    return a.totalMarks <= b.totalMarks; // Shortcut
+}
+
+int main() {
+    int n;
+    cin >> n;
+    
+    Student a[n];
+    for (int i = 0; i < n; i++) {
+        cin >> a[i].name >> a[i].roll >> a[i].totalMarks;
+    }
+    
+    sort(a, a + n, cmp);
+    
+    for (int i = 0; i < n; i++) 
