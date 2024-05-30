@@ -254,7 +254,7 @@ int main() {
     // cout << s << endl;
     
     
-    // But in getline there is a problem if i press enter after integer geline will receive the enter and output
+    // But in getline there is a problem if i press enter after integer geline will receive the enter [This is called leading space] and output
     // show only integer on the otherhand cin doesn't get that. To solve this just use cin.ignore() or getchar(). This will
     // ignore enter
     int n;
