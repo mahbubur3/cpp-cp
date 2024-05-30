@@ -157,10 +157,31 @@ int main() {
     return 0;
 }
 
-// int main() {
-//     string s = "TheStateUniversityOfNewYork";
-//     int i = s.find("University");
-//     cout << i << endl;
+/*
+int main() {
+    string s = "TheStateUniversityOfNewUniversityYork"
+    
+    int count = 0;
+    while (s.find("University") != -1) {
+        s.replace(s.find("University"), 10, " ");
+        count++;
+    }
+    
+    cout << count << endl;
 
-//     return 0;
-// }
+    return 0;
+}
+*/
+
+int main() {
+    string s;
+    getline(cin, s);
+    
+    while (s.find("EGYPT") != -1) {
+        s.replace(s.find("EGYPT"), 5, " ");
+    }
+    
+    cout << s << endl;
+
+    return 0;
+}
