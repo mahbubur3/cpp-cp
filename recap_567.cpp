@@ -111,7 +111,7 @@ int main() {
 
 
 /* Conceptual Session */
-int main() {
+/* int main() {
     // string s;
     // getline(cin, s);
 
@@ -123,20 +123,44 @@ int main() {
     //     cout << w << endl;
     // }
 
+    return 0;
+} */
 
+
+/* int main() {
     string s;
     getline(cin, s);
 
     stringstream ss(s);
-    
+
     string w;
-    int count = 0;
+    ss >> w;
+    reverse(w.begin(), w.end());
+    cout << word;
+    
     while (ss >> w) {
-        count++;
+        reverse(w.begin(), w.end());
+        cout << " " << w;
     }
 
-    cout << count << endl;
+    return 0;
+} */
 
+int main() {
+    // string s = "TheStateUniversityOfNewYork";
+    // s.replace(8, 10, " ");
+    // cout << s << endl;
+    string s = "TheStateUniversityOfNewYork";
+    s.replace(s.find("University"), 10, " ");
+    cout << s << endl;
 
     return 0;
 }
+
+// int main() {
+//     string s = "TheStateUniversityOfNewYork";
+//     int i = s.find("University");
+//     cout << i << endl;
+
+//     return 0;
+// }
