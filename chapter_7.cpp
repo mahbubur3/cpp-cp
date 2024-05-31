@@ -4,7 +4,7 @@ using namespace std;
 
 /* <------ Array of objects ------> */
 // Print objects
-/* class Student {
+class Student {
     public:
         int id;
         string name;
@@ -25,11 +25,11 @@ int main() {
     }
 
     return 0;
-} */
+}
 
 
 // Print objects name with space
-/* class Student {
+class Student {
     public:
         int id;
         string name;
@@ -54,11 +54,11 @@ int main() {
     }
 
     return 0;
-} */
+}
 
 
 // Get minimum & maximum value from array
-/* class Student {
+class Student {
     public:
         string name;
         int roll;
@@ -84,11 +84,11 @@ int main() {
     cout << mn << endl;
 
     return 0;
-} */
+}
 
 
 // Get minimum object from array
-/* class Student {
+class Student {
     public:
         string name;
         int roll;
@@ -115,11 +115,11 @@ int main() {
     cout << mn.name << " " << mn.roll << " " << mn.totalMarks << endl;
 
     return 0;
-} */
+}
 
 
 // Get maximum object from array
-/* class Student {
+class Student {
     public:
         string name;
         int roll;
@@ -146,10 +146,10 @@ int main() {
     cout << mx.name << " " << mx.roll << " " << mx.totalMarks << endl;
 
     return 0;
-} */
+}
 
 // Sort array of objects using selection sort
-/* class Student {
+class Student {
     public:
         string name;
         int roll;
@@ -183,7 +183,7 @@ int main() {
 
 
 // Question solve for mid-term
-/* class Student {
+class Student {
     public:
         string name;
         int roll;
@@ -220,11 +220,11 @@ int main() {
     }
     
     return 0;
-} */
+}
 
 
 // Sort using built-in sort() function
-/* class Student {
+class Student {
     public:
         string name;
         int roll;
