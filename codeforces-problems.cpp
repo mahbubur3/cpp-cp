@@ -147,3 +147,94 @@ int main() {
 
     return 0;
 }
+
+
+/* Module 6.5 practice problems */
+// problem 1
+int main() {
+    string s;
+    getline(cin, s);
+    
+    int count = 0;
+
+    bool insideWord = false;
+    for (char c:s) {
+        if (isalpha(c)) {
+            if (insideWord == false) {
+                count++;
+                insideWord = true;
+            }
+        } else {
+            insideWord = false;
+        }
+    }
+
+    cout << count << endl;
+
+    return 0;
+}
+
+
+// Problem 2
+int main() {
+    string s;
+    getline(cin, s);
+
+    stringstream ss(s);
+
+    string w;
+    ss >> w;
+    reverse(w.begin(), w.end());
+    cout << word;
+    
+    while (ss >> w) {
+        reverse(w.begin(), w.end());
+        cout << " " << w;
+    }
+
+    return 0;
+}
+
+
+// Problem 3
+int main() {
+    string s;
+    getline(cin, s);
+    
+    while(s.find("EGYPT") != -1) {
+        s.replace(s.find("EGYPT"), 5, " ");
+    }
+    
+    cout << s << endl;
+
+    return 0;
+}
+
+
+// Problem 4
+int main() {
+    int test;
+    cin >> test;
+    
+    for (int t = 0; t < test; t++) {
+        string s;
+        cin >> s;
+        
+        int firstSum = 0, secondSum = 0;
+        for (int i = 0; i < s.size() - 3; i++) {
+            firstSum += (s[i] - '0');
+        }
+        
+        for (int i = s.size() - 1; i > 2; i--) {
+            secondSum += (s[i] - '0');
+        }
+        
+        if (firstSum == secondSum) {
+            cout << "YES" << endl;
+        } else {
+            cout << "NO" << endl;
+        }
+    }
+    
+    return 0;
+}
