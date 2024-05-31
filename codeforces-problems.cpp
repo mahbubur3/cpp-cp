@@ -238,3 +238,34 @@ int main() {
     
     return 0;
 }
+
+
+// Problem 5
+int main() {
+    int test;
+    cin >> test;
+    
+    for (int t = 0; t < test; t++) {
+        int n;
+        cin >> n;
+        
+        int a[26] = {0};
+        int count = 0;
+        
+        for (int i = 0; i < n; i++) {
+            char c;
+            cin >> c;
+            a[c - 'A']++;
+        }
+        
+        for (int i = 0; i < 26; i++) {
+            if (a[i] > 0) {
+                count = count + a[i] + 1;
+            }
+        }
+    
+        cout << count << endl;
+    }
+    
+    return 0;
+}
