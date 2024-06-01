@@ -269,3 +269,102 @@ int main() {
     
     return 0;
 }
+
+/* Module 7.5 practice problems */
+// Custom made
+// Problem One
+/* class Student {
+    public:
+        string name;
+        int roll;
+        int marks;
+};
+
+bool cmp(Student x, Student y) {
+    if (x.marks > y.marks) {
+        return true;
+    } else if (x.marks < y.marks) {
+        return false;
+    } else {
+        if (x.roll < y.roll) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+}
+
+int main() {
+    int n;
+    cin >> n;
+
+    Student a[n];
+    for (int i = 0; i < n; i++) {
+        cin >> a[i].name >> a[i].roll >> a[i].marks;
+    }
+
+    sort(a, a + n, cmp);
+
+    for (int i = 0; i < n; i++) {
+        cout << a[i].name << " " << a[i].roll << " " << a[i].marks << endl;
+    }
+
+    return 0;
+} */
+
+
+// Problem Two
+/* class Student {
+    public:
+        string name;
+        int roll;
+        int marks;
+};
+
+int main() {
+    int n;
+    cin >> n;
+
+    Student a[n];
+    for (int i = 0; i < n; i++) {
+        cin >> a[i].name >> a[i].roll >> a[i].marks;
+    }
+
+    int i = 0, j = n - 1;
+    while (i < j) {
+        swap(a[i], a[j]);
+        i++;
+        j--;
+    }
+
+    for (int i = 0; i < n; i++) {
+        cout << a[i].name << " " << a[i].roll << " " << a[i].marks << endl;
+    }
+
+    return 0;
+} */
+
+
+// Problem Three
+int main() {
+    string s;
+    getline(cin, s);
+
+    string x;
+    getline(cin, x);
+
+    stringstream ss(s);
+
+    int count = 0;
+    string w;
+    while (ss >> w) {
+        // cout << w << endl;
+        if (w == x) {
+            count++;
+        }
+    }
+
+    cout << count << endl;
+
+    return 0;
+}
