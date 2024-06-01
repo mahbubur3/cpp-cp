@@ -271,6 +271,66 @@ int main() {
 }
 
 /* Module 7.5 practice problems */
+// Problem One
+int main() {
+    int test;
+    cin >> test;
+
+    for (int t = 0; t < test; t++) {
+        int n;
+        cin >> n;
+        
+        int a[n];
+        for (int i = 0; i < n; i++) {
+            cin >> a[i];
+        }
+        
+        int evenCount = 0, oddCount = 0;
+        if (n % 2 != 0) {
+            cout << "-1" << endl;
+        } else {
+            for (int i = 0; i < n; i++) {
+                if (a[i] % 2 == 0) {
+                    evenCount++;
+                } else {
+                    oddCount++;
+                }
+            }
+            
+            int result = abs(evenCount - oddCount) / 2;
+            cout << result << endl;
+        }
+    }
+
+    return 0;
+}
+
+// Problem Two
+/* void text(int n, char c) {
+    for (int i = 0; i < n; i++) {
+        cout << c << " ";
+    }
+    
+    cout << endl;
+}
+
+int main() {
+    int test;
+    cin >> test;
+
+    for (int t = 0; t < test; t++) {
+        int n;
+        cin >> n;
+
+        char c;
+        cin >> c;
+
+        text(n, c);
+    }
+
+    return 0;
+} */
+
 // Custom made
 // Problem One
 /* class Student {
