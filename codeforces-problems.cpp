@@ -331,6 +331,24 @@ int main() {
     return 0;
 } */
 
+int main() {
+    int x, n;
+    cin >> x >> n;
+
+    long long sum = 0; // Use long long to avoid overflow
+    for (int i = 2; i <= n; i += 2) {
+        long long term = 1; // Initialize term to 1 for each power calculation
+        for (int j = 0; j < i; j++) {
+            term *= x; // Multiply x, i times to get x^i
+        }
+        sum += term; // Add the term to the sum
+    }
+
+    cout << sum << endl;
+
+    return 0;
+}
+
 // Custom made
 // Problem One
 /* class Student {
