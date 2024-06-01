@@ -1,3 +1,2 @@
-# Solve using stringstream
-Q. Reverse Words - https://codeforces.com/group/MWSDmqGsZm/contest/219856/problem/Q
-P. Count Words - https://codeforces.com/group/MWSDmqGsZm/contest/219856/problem/P
+# FREQUENCY ARRAY. Watch all chapter videos also check youtube tutorials and websites. No more talk just finished it.
+# Checkout Even Hate Odd
