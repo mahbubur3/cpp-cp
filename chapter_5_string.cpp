@@ -3,26 +3,25 @@ using namespace std;
 
 
 // For copy string you don't need to use strcpy like. just reasign text. 
-// int main() {
-//     string text = "Hello";
-//     text = "Hello Australia!"; // Automatically increase size
-//     cout << text << endl;
+int main() {
+    string text = "Hello";
+    text = "Hello Australia!"; // Automatically increase size
+    cout << text << endl;
     
-//     return 0;
-// }
+    return 0;
+}
 
 
-/*
 // Comparison in C and C++
 int main() {
     // C
-    // char x[10] = "Classic";
-    // char y[10] = "Classic";
-    // if (strcmp(x, y) == 0) {
-    //     printf("Same");
-    // } else {
-    //     printf("Different");
-    // }
+    char x[10] = "Classic";
+    char y[10] = "Classic";
+    if (strcmp(x, y) == 0) {
+        printf("Same");
+    } else {
+        printf("Different");
+    }
     
     // C++
     string x = "Classic";
@@ -35,7 +34,7 @@ int main() {
     
     return 0;
 }
-*/
+
 
 /*
 String built-in functions
@@ -69,63 +68,63 @@ String built-in functions
     b. s.end() -> pointer to the next element after the last element of the string.
 */
 
-/*
+
 int main() {
     // size
-    // string s = "hello new world";
-    // cout << s.size();
+    string s = "hello new world";
+    cout << s.size();
     
     
     // capacity - automatically increase size
-    // string s = "welcome to the uae";
-    // cout << s.capacity() << endl;
-    // s = "welcome to the united states";
-    // cout << s.capacity() << endl;
+    string s = "welcome to the uae";
+    cout << s.capacity() << endl;
+    s = "welcome to the united states";
+    cout << s.capacity() << endl;
     
     
     // clear - if i need clear string or delete
-    // string s = "welcome";
-    // cout << s << endl;
-    // s.clear();
-    // cout << s << endl;
-    // cout << s.size() << endl;
+    string s = "welcome";
+    cout << s << endl;
+    s.clear();
+    cout << s << endl;
+    cout << s.size() << endl;
     
     
     // empty
-    // string t = "good";
-    // if (t.empty() == true) {
-    //     cout << "Empty";
-    // } else {
-    //     cout << "Not Empty";
-    // }
+    string t = "good";
+    if (t.empty() == true) {
+        cout << "Empty";
+    } else {
+        cout << "Not Empty";
+    }
     
-    // string t = "good";
-    // t.clear();
-    // if (t.empty() == true) {
-    //     cout << "Empty";
-    // } else {
-    //     cout << "Not Empty";
-    // }
+    string t = "good";
+    t.clear();
+    if (t.empty() == true) {
+        cout << "Empty";
+    } else {
+        cout << "Not Empty";
+    }
     
     // Without empty function
-    // string t = "good";
-    // if (t.size() == 0) {
-    //     cout << "empty";
-    // } else {
-    //     cout << "not empty";
-    // }
+    string t = "good";
+    if (t.size() == 0) {
+        cout << "empty";
+    } else {
+        cout << "not empty";
+    }
     
     
     // resize
-    // string s;
-    // cin >> s;
-    // s.resize(5);
-    // cout << s << endl;
+    string s;
+    cin >> s;
+    s.resize(5);
+    cout << s << endl;
     
     // string s;
-    // cin >> s;
-    // s.resize(10, 'z'); // automatically put z remaining position
-    // cout << s << endl;
+    cin >> s;
+    s.resize(10, 'z'); // automatically put z remaining position
+    cout << s << endl;
     
     string s;
     cin >> s;
@@ -136,10 +135,8 @@ int main() {
     
     return 0;
 }
-*/
 
 
-/*
 int main() {
     // string s;
     // cin >> s;
