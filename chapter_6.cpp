@@ -23,18 +23,17 @@ int main() {
 
 
 // Sort string
-// int main() {
-//     string s;
-//     cin >> s;
-//     sort(s.begin(), s.end());
-//     cout << s << endl;
+int main() {
+    string s;
+    cin >> s;
+    sort(s.begin(), s.end());
+    cout << s << endl;
     
-//     return 0;
-// }
+    return 0;
+}
 
 
 // Range based for loop for string
-/*
 int main() {
     string s;
     cin >> s;
@@ -52,27 +51,25 @@ int main() {
     
     return 0;
 }
-*/
+
 
 
 // Reference
-// int main() {
-//     string food = "pizza";
-//     string &meal = food;
+int main() {
+    string food = "pizza";
+    string &meal = food;
     
-//     cout << meal << endl;
-// }
+    cout << meal << endl;
+}
 
-/*
+
 void showText(string& str) {
     str = "World";
 }
 
 int main() {
     string str = "Hello";
-    
     showText(str);
-    
     cout << str << endl;
     
     return 0;
@@ -80,7 +77,6 @@ int main() {
 */
 
 // Word printing
-/*
 int main() {
     string s;
     getline(cin , s);
@@ -95,11 +91,9 @@ int main() {
     
     return 0;
 }
-*/
 
 
 // Word printing with recursion
-/*
 void showWords(stringstream& ss) {
     string w;
     if (ss >> w) {
@@ -117,10 +111,9 @@ int main() {
     
     return 0;
 }
-*/
+
 
 // Word printing with recursion reverse
-/*
 void showWords(stringstream& ss) {
     string w;
     if (ss >> w) {
@@ -138,11 +131,9 @@ int main() {
     
     return 0;
 }
-*/
 
 
 // FUNCTION INSIDE CLASS
-/*
 class Student {
     public:
         int id;
@@ -163,15 +154,12 @@ class Student {
 int main() {
     Student john(9001, "John Smith", 3.33);
     john.showText();
-    
     cout << john.id << " " << john.name << " " << john.gpa;
     
     return 0;
 }
-*/
 
 
-/*
 class Student {
     public:
         int id;
@@ -197,10 +185,8 @@ int main() {
     
     return 0;
 }
-*/
 
 
-/*
 class Student {
     public:
         int id;
@@ -230,7 +216,6 @@ class Student {
 
 int main() {
     Student john(9001, "John Smith", 3.33, 98, 94);
-    
     john.showInfo();
     cout << john.totalMarks();
     
@@ -238,8 +223,6 @@ int main() {
 } */
 
 
-
-/* 
 class Person {
     public:
         string name;
@@ -255,15 +238,13 @@ int main() {
     // Create dynamic object
     Person* john = new Person("John Dalson", 27);
     Person* zack = new Person("Zack Smith", 28);
-
     // Copy
     // john->name = zack->name;
     // john->age = zack->age; // Or
     *john = *zack;
-
     // Delete
-    delete zack;
-
+    delete zack
+    // Print
     cout << john->name << " " << john->age << endl;
 
     return 0;
@@ -271,7 +252,6 @@ int main() {
 
 
 // Practice
-/* 
 class Student {
     public:
         int id;
@@ -290,28 +270,25 @@ class Student {
 int main() {
     Student* toy = new Student(901, "Toy", "CS", 3.39);
     Student* zack = new Student(801, "Zack", "EE", 3.89);
-
     *zack = *toy;
-
     delete toy;
-
     cout << zack->id << " " << zack->name << " " << zack->major << " " << zack->gpa;
 
     return 0;
-} */
+}
 
 
 // NAMESPACES
-// namespace john {
-//     int age = 28;
-// }
-// int main() {
-//     cout << john::age << endl;
-//     return 0;
-// }
+namespace john {
+    int age = 28;
+}
+int main() {
+    cout << john::age << endl;
+    return 0;
+}
 
 
-/* namespace zack {
+namespace zack {
     void info() {
         cout << "From zack namespace" << endl;
     }
@@ -325,7 +302,8 @@ int main() {
     zack::info();
     toy::info();
     return 0;
-} */
+}
+
 
 namespace zack {
     int age = 29;
