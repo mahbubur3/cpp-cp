@@ -1,43 +1,39 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-
 // DELETE ARRAY FROM MEMORY
-/*
 int main() {
 	int n;
 	cin >> n;
-    
+	
 	// Create dynamic array
 	int *a = new int[n];
-    
+	
 	// Input array
 	for (int i = 0; i < n; i++) {
-    	cin >> a[i];
+		cin >> a[i];
 	}
-    
+	
 	// Show array
 	for (int i = 0; i < n; i++) {
-    	cout << a[i] << " ";
+		cout << a[i] << " ";
 	}
-    
+	
 	// New line
 	cout << endl;
-    
+	
 	// Delete array from memory
 	delete[] a;
-    
+	
 	// Show array after delete
 	for (int i = 0; i < n; i++) {
-    	cout << a[i] << " ";
+		cout << a[i] << " ";
 	}
-
+	
 	return 0;
 }
-*/
 
 
-/*
 int main() {
 	// Create dynamic array
 	int *a = new int[3];
@@ -58,7 +54,7 @@ int main() {
 
 	return 0;
 }
-*/
+
 
 int main() {
 	// Create dynamic array
