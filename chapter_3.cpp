@@ -2,151 +2,150 @@
 using namespace std;
 
 // Create class
-// class Student {
-//     public:
-//         int id;
-//         double gpa;
-//     };
+class Student {
+    public:
+        int id;
+        double gpa;
+    };
 
-// int main() {
-//     Student a;
-//     a.id = 163895;
-//     a.gpa = 3.3;
+int main() {
+    Student a;
+    a.id = 163895;
+    a.gpa = 3.3;
     
-//     cout << a.id << " " << a.gpa;
+    cout << a.id << " " << a.gpa;
     
-//     return 0;
-// }
+    return 0;
+}
 
 
-// class Student {
-//     public:
-//         int id;
-//         double gpa;
-// };
+class Student {
+    public:
+        int id;
+        double gpa;
+};
 
-// int main() {
-//     Student a, b;
-//     a.id = 95;
-//     a.gpa = 3.3;
-//     b.id = 85;
-//     b.gpa = 3.4;
+int main() {
+    Student a, b;
+    a.id = 95;
+    a.gpa = 3.3;
+    b.id = 85;
+    b.gpa = 3.4;
     
-//     cout << a.id << " " << a.gpa << endl;
-//     cout << b.id << " " << b.gpa << endl;
+    cout << a.id << " " << a.gpa << endl;
+    cout << b.id << " " << b.gpa << endl;
     
-//     return 0;
-// }
+    return 0;
+}
 
 
 // Create class with string
-// class Student {
-//     public:
-//         int id;
-//         char name[50];
-//         double gpa;
-// };
+class Student {
+    public:
+        int id;
+        char name[50];
+        double gpa;
+};
 
-// int main() {
-//     Student a, b, c;
+int main() {
+    Student a, b, c;
     
-//     a.id = 95;
-//     char temp[50] = "mahbub";
-//     strcpy(a.name, temp);
-//     a.gpa = 3.33;
+    a.id = 95;
+    char temp[50] = "mahbub";
+    strcpy(a.name, temp);
+    a.gpa = 3.33;
     
-//     b.id = 86;
-//     char temp2[50] = "sakib";
-//     strcpy(b.name, temp2);
-//     b.gpa = 3.34;
+    b.id = 86;
+    char temp2[50] = "sakib";
+    strcpy(b.name, temp2);
+    b.gpa = 3.34;
     
-//     c.id = 99;
-//     char temp3[50] = "shabab";
-//     strcpy(c.name, temp3);
-//     c.gpa = 3.19;
+    c.id = 99;
+    char temp3[50] = "shabab";
+    strcpy(c.name, temp3);
+    c.gpa = 3.19;
     
-//     cout << a.id << " " << a.name << " " << a.gpa << endl;
-//     cout << b.id << " " << b.name << " " << b.gpa << endl;
-//     cout << c.id << " " << c.name << " " << c.gpa << endl;
+    cout << a.id << " " << a.name << " " << a.gpa << endl;
+    cout << b.id << " " << b.name << " " << b.gpa << endl;
+    cout << c.id << " " << c.name << " " << c.gpa << endl;
     
-//     return 0;
-// }
+    return 0;
+}
 
 
 // User input
-// class Student {
-//     public:
-//         int id;
-//         char name[50];
-//         double gpa;
-// };
+class Student {
+    public:
+        int id;
+        char name[50];
+        double gpa;
+};
 
-// int main() {
-//     Student a, b;
-//     cin >> a.id >> a.name >> a.gpa;
-//     cin >> b.id >> b.name >> b.gpa;
+int main() {
+    Student a, b;
+    cin >> a.id >> a.name >> a.gpa;
+    cin >> b.id >> b.name >> b.gpa;
     
-//     cout << a.id << " " << a.name << " " << a.gpa << endl;
-//     cout << b.id << " " << b.name << " " << b.gpa << endl;
+    cout << a.id << " " << a.name << " " << a.gpa << endl;
+    cout << b.id << " " << b.name << " " << b.gpa << endl;
     
-//     return 0;
-// }
+    return 0;
+}
 
 
 // User input name have space
-// class Student {
-//     public:
-//         int id;
-//         char name[50];
-//         double gpa;
-// };
+class Student {
+    public:
+        int id;
+        char name[50];
+        double gpa;
+};
 
-// int main() {
-//     Student a, b;
+int main() {
+    Student a, b;
     
-//     cin >> a.id;
-//     cin.getline(a.name, 50);
-//     cin >> a.gpa;
+    cin >> a.id;
+    cin.getline(a.name, 50);
+    cin >> a.gpa;
     
-//     cin >> b.id;
-//     cin.getline(b.name, 50);
-//     cin >> b.gpa;
+    cin >> b.id;
+    cin.getline(b.name, 50);
+    cin >> b.gpa;
     
-//     cout << a.id << " " << a.name << " " << a.gpa << endl;
-//     cout << b.id << " " << b.name << " " << b.gpa << endl;
+    cout << a.id << " " << a.name << " " << a.gpa << endl;
+    cout << b.id << " " << b.name << " " << b.gpa << endl;
     
-//     return 0;
-// }
+    return 0;
+}
 
 
-// class Student {
-//     public:
-//         char name[100];
-//         int id;
-//         double gpa;
-// };
+class Student {
+    public:
+        char name[100];
+        int id;
+        double gpa;
+};
 
-// int main() {
-//     Student a, b;
+int main() {
+    Student a, b;
     
-//     cin.getline(a.name, 100);
-//     cin >> a.id >> a.gpa;
+    cin.getline(a.name, 100);
+    cin >> a.id >> a.gpa;
     
-//     getchar();
+    getchar();
     
-//     cin.getline(b.name, 100);
-//     cin >> b.id >> b.gpa;
+    cin.getline(b.name, 100);
+    cin >> b.id >> b.gpa;
     
-//     cout << a.name << " " << a.id << " " << a.gpa << endl;
-//     cout << b.name << " " << b.id << " " << b.gpa << endl;
+    cout << a.name << " " << a.id << " " << a.gpa << endl;
+    cout << b.name << " " << b.id << " " << b.gpa << endl;
     
-//     return 0;
-// }
+    return 0;
+}
 
 
 
 // Constructor
-/*
 class Student {
     public:
         int roll;
@@ -169,11 +168,9 @@ int main() {
     
     return 0;
 }
-*/
 
 
 // Constructor with pointer array
-/*
 class Laptop {
     public:
         int year;
@@ -200,11 +197,9 @@ int main() {
     
     return 0;
 }
-*/
 
 
 // Return object from function [Note: This work like normal variable not like array]
-/*
 class Student {
     public:
         int id;
@@ -230,7 +225,6 @@ int main() {
     
     return 0;
 }
-*/
 
 
 // Return object pointer [When we return pointer object the object will delete that's why we need dynamic object]
@@ -262,7 +256,6 @@ int main() {
 
 
 // Sort array using sort()
-/*
 int main() {
     int n;
     cin >> n;
@@ -281,11 +274,9 @@ int main() {
     
     return 0;
 }
-*/
 
 
 // Create dynamic object
-/*
 class Student {
     public:
         int roll;
@@ -299,13 +290,12 @@ class Student {
 
 int main() {
     Student* john = new Student(2, 3.33);
-    
     cout << john->roll << " " << john->gpa << endl;
     
     return 0;
 }
-*/
-/*
+
+
 class Employees {
     public:
         int id;
@@ -326,7 +316,6 @@ int main() {
 */
 
 
-/*
 class Student {
     public:
         int roll;
@@ -353,7 +342,7 @@ int main() {
     
     return 0;
 }
-*/
+
 
 // RUFF ===================== RUFF
 /*
