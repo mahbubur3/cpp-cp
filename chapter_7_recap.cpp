@@ -1,7 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-/*
 // Print array of objects
 class Student {
     public:
@@ -27,10 +26,8 @@ int main() {
     
     return 0;
 }
-*/
 
 
-/*
 // Get maximum value from objects
 class Student {
     public:
@@ -59,7 +56,6 @@ int main() {
     
     return 0;
 }
-*/
 
 /*
 // Maximum objects
