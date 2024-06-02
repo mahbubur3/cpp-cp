@@ -1,7 +1,28 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-/*
+int main() {
+    int a, b;
+    char s;
+    cin >> a >> s >> b;
+
+    if (s == '+') {
+        int sum = a + b;
+        cout << sum << endl;
+    } else if (s == '-') {
+        int sub = a - b;
+        cout << sub << endl;
+    } else if (s == '*') {
+        int mul = a * b;
+        cout << mul << endl;
+    } else if (s == '/') {
+        int div = a / b;
+        cout << div << endl;
+    }
+
+    return 0;
+}
+
 int main() {
     int a, b;
     char s;
@@ -33,7 +54,6 @@ int main() {
     
     return 0;
 }
-*/
 
 
 int main() {
@@ -306,11 +326,10 @@ int main() {
 }
 
 // Problem Two
-/* void text(int n, char c) {
+void text(int n, char c) {
     for (int i = 0; i < n; i++) {
         cout << c << " ";
-    }
-    
+    }  
     cout << endl;
 }
 
@@ -321,15 +340,13 @@ int main() {
     for (int t = 0; t < test; t++) {
         int n;
         cin >> n;
-
         char c;
         cin >> c;
-
         text(n, c);
     }
 
     return 0;
-} */
+}
 
 int main() {
     int x, n;
@@ -351,7 +368,7 @@ int main() {
 
 // Custom made
 // Problem One
-/* class Student {
+class Student {
     public:
         string name;
         int roll;
@@ -388,11 +405,11 @@ int main() {
     }
 
     return 0;
-} */
+}
 
 
 // Problem Two
-/* class Student {
+class Student {
     public:
         string name;
         int roll;
@@ -420,7 +437,7 @@ int main() {
     }
 
     return 0;
-} */
+}
 
 
 // Problem Three
