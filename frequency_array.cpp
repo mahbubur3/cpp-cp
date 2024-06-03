@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
-using namespace std;
 
+using namespace std;
 
 // Count alpha
 int main() {
@@ -68,6 +68,50 @@ int main() {
     for (int i = 0; i < 26; i++) {
         for (int j = 0; j < a[i]; j++) {
             cout << char('a' + i);
+        }
+    }
+
+    return 0;
+}
+
+// This will error excced memory limit
+int main() {
+    int n;
+    cin >> n;
+
+    char a[n];
+    for (int i = 0; i < n; i++) {
+        cin >> a[i];
+    }
+
+    int f[26] = {0};
+
+    for (int i = 0; i < n; i++) {
+        f[a[i] - 97]++;
+    }
+
+    for (int i = 0; i < 26; i++) {
+        for (int j = 0; j < a[i]; j++) {
+            cout << char(97 + i);
+        }
+    }
+    
+    return 0;
+}
+
+
+int main() {
+    string s;
+    cin >> s;
+
+    int f[26] = {0};
+    for(char c : s) {
+        f[c - 97]++;
+    }
+
+    for (char i = 'a'; i <= 'z'; i++) {
+        for (int j = 0; j < f[i - 97]; j++) {
+            cout << i;
         }
     }
 
