@@ -12,15 +12,18 @@ int main() {
         cin >> s[i];
     }
     
-    int a[26] = {0};
+    // Create frequncy array
+    int freq[26] = {0};
     
+    // Convert for counting
     for (int i = 0; i < n; i++) {
-        a[s[i] - 'a']++;
+        freq[s[i] - 97]++;
     }
     
+    // Show result
     for (int i = 0; i < 26; i++) {
-        if (a[i] != 0) {
-            cout << " " << a[i];
+        if (freq[i] != 0) { // Print without count zero
+            cout << "-" << freq[i];
         }
     }
     
