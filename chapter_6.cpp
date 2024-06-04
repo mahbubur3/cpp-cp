@@ -1,9 +1,8 @@
 #include <bits/stdc++.h>
+
 using namespace std;
 
-
 // String constructor
-/*
 int main() {
     // string = "Hello World";
     // string s("Hello World"); // This is constructor
@@ -19,7 +18,6 @@ int main() {
     
     return 0;
 }
-*/
 
 
 // Sort string
@@ -53,12 +51,10 @@ int main() {
 }
 
 
-
 // Reference
 int main() {
     string food = "pizza";
-    string &meal = food;
-    
+    string &meal = food;  
     cout << meal << endl;
 }
 
@@ -74,7 +70,7 @@ int main() {
     
     return 0;
 }
-*/
+
 
 // Word printing
 int main() {
