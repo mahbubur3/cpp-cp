@@ -31,6 +31,27 @@ int main() {
 }
 
 
+// Count alpha using string
+int main() {
+    string s;
+    cin >> s;
+
+    int freq[26] = {0};
+
+    for (char c : s) {
+        freq[c - 97]++;
+    }
+
+    for (int i = 0; i < 26; i++) {
+        if (freq[i] > 0) {
+            cout << char(i + 97) << "-" << freq[i] << endl;
+        }
+    }
+
+    return 0;
+}
+
+
 // ICPC Ballon
 int main() {
     int n;
