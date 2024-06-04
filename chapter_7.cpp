@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
-using namespace std;
 
+using namespace std;
 
 /* <------ Array of objects ------> */
 // Print objects
@@ -41,7 +41,7 @@ int main() {
     cin >> n;
 
     Student a[n];
-    Student *a = new Student[n] // Dynamic object
+    // Student *a = new Student[n] // Dynamic object
     for (int i = 0; i < n; i++) {
         cin >> a[i].id;
         cin.ignore();
@@ -232,13 +232,13 @@ class Student {
 };
 
 bool cmp(Student a, Student b) {
-    // if (a.totalMarks <= b.totalMarks) { // For descending use '>='
-    //     return true;
-    // } else {
-    //     return false;
-    // }
+    if (a.totalMarks <= b.totalMarks) { // For descending use '>='
+        return true;
+    } else {
+        return false;
+    }
     
-    return a.totalMarks <= b.totalMarks; // Shortcut
+    // return a.totalMarks <= b.totalMarks; // Shortcut
 }
 
 int main() {
