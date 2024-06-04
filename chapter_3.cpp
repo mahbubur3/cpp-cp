@@ -313,7 +313,6 @@ int main() {
     
     return 0;
 }
-*/
 
 
 class Student {
@@ -345,7 +344,6 @@ int main() {
 
 
 // RUFF ===================== RUFF
-/*
 class Car {
     public:
         char brandName[20];
@@ -411,8 +409,8 @@ int main() {
         
     return  0;
 }
-*/
-/*
+
+
 class Car {
     public:
         char brandName[20];
@@ -441,4 +439,3 @@ int main() {
         
     return  0;
 }
-*/
