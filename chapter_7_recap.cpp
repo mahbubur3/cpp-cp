@@ -57,7 +57,7 @@ int main() {
     return 0;
 }
 
-/*
+
 // Maximum objects
 class Student {
     public:
@@ -88,8 +88,8 @@ int main() {
     
     return 0;
 }
-*/
-/*
+
+
 // Sort ascending order according to id
 class Student {
     public:
@@ -121,11 +121,9 @@ int main() {
     
     return 0;
 }
-*/
 
 
 // Sort using built-in funciton
-/*
 class Student {
     public:
         string name;
@@ -187,12 +185,12 @@ bool cmp(Student x, Student y) {
     } else if (x.mathMarks < y.mathMarks) { // swap is condition is true
         return false;
     } else { // when x and y marks are same then sort by id
-        // if (x.id < y.id) {
-        //     return true;
-        // } else {
-        //     return false;
-        // }
-        return x.id < y.id; // for remember think what you need, if i need x is small then just write like this.
+        if (x.id < y.id) {
+            return true;
+        } else {
+            return false;
+        }
+        // return x.id < y.id; // for remember think what you need, if i need x is small then just write like this.
     }
 }
 
