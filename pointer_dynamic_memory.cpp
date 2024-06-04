@@ -2,7 +2,6 @@
 
 using namespace std;
 
-/*
 int main() {
     int n = 10;
     int *p = &n;
@@ -10,9 +9,9 @@ int main() {
     cout << *p << endl; // Access value of n [Dereference]
 
     return 0;
-} */
+}
 
-/*
+
 int main() {
     int n = 10;
     int *p = &n;
@@ -21,10 +20,9 @@ int main() {
     cout << *p << endl;
 
     return 0;
-} */
+}
 
 
-/*
 int main() {
     int x = 10;
     float y = 1.22f;
@@ -39,10 +37,9 @@ int main() {
     cout << *p_z << endl;
 
     return 0;
-} */
+}
 
 
-/* 
 int main() {
     int n = 20;
     int *ptr;
@@ -53,11 +50,11 @@ int main() {
     cout << *ptr << endl; // Access the value using pointer
 
     return 0;
-} */
+}
 
 
 // CALL BY VALUE
-/* void demo(int n) {
+void demo(int n) {
     n = 20;
 }
 
@@ -68,11 +65,11 @@ int main() {
     cout << n << endl;
 
     return 0;
-} */
+}
 
 
 // CALL BY REFERENCE
-/* void demo(int *n) {
+void demo(int *n) {
     *n = 500;
 }
 
@@ -83,11 +80,10 @@ int main() {
     cout << n << endl;
 
     return 0;
-} */
+}
 
 
 /* <-------- DYNAMIC MEMORY --------> */ 
-/*
 int main() {
     int *n = new int;
     *n = 100;
@@ -97,10 +93,9 @@ int main() {
     cout << *n << endl;
 
     return 0;
-} */
+}
 
 // With function
-/* 
 int *demo() {
     int *n = new int;
     *n = 100;
@@ -114,10 +109,10 @@ int main() {
 
 
     return 0;
-} */
+}
 
 // Double pointer
-/* int main() {
+int main() {
     int n = 100;
     int *p = &n;
     int **dp = &p; 
@@ -127,16 +122,33 @@ int main() {
     cout << *dp << endl;
 
     return 0;
-} */
+}
+
+
+int main() {
+    int a = 3;
+    int *p1 = &a;
+
+    cout << &a << endl;
+    cout << p1 << endl;
+    cout << *p1 << endl;
+
+    int** p2 = &p1;
+    cout << &p1 << endl;
+    cout << p2 << endl;
+    cout << *p2 << endl;
+    cout << **p2 << endl;
+
+    return 0;
+}
 
 
 // Create dynamic array & delete this array 
-/*
 int main() {
     int n;
     cin >> n;
 
-    int *a = new int[n];
+    int* a = new int[n];
     for (int i = 0; i < n; i++) {
         cin >> a[i];
     }
@@ -152,12 +164,12 @@ int main() {
     }
 
     return 0;
-} */
+}
 
 
 // Return array
-int *numbers(int n) {
-    int *arr = new int[n];
+int* numbers(int n) {
+    int* arr = new int[n];
     for (int i = 0; i < n; i++) {
         cin >> arr[i];
     }
@@ -169,10 +181,61 @@ int main() {
     int n;
     cin >> n;
 
-    int *p = numbers(n);
+    int* p = numbers(n);
     for (int i = 0; i < n; i++) {
         cout << p[i] << " ";
     }
+
+    return 0;
+}
+
+
+// DYNAMIC OBJECT
+// Create dynamic object
+class Student {
+    public:
+        int id;
+        string name;
+        double gpa;
+
+        Student(int id, string name, double gpa) {
+            this->id = id;
+            this->name = name;
+            this->gpa = gpa;
+        }
+};
+
+int main() {
+    Student* john = new Student(1001, "John", 3.33);
+    cout << john->id << " " << john->name << " " << john->gpa << endl;
+
+    return 0;
+}
+
+
+// Return dynamic object
+class Student {
+    public:
+        int id;
+        string name;
+        double gpa;
+
+        Student(int id, string name, double gpa) {
+            this->id = id;
+            this->name = name;
+            this->gpa = gpa;
+        }
+};
+
+Student* info() {
+    Student* john = new Student(1001, "John", 3.33);
+
+    return john;
+}
+
+int main() {
+    Student* result = info();
+    cout << result->id << " " << result->name << " " << result->gpa << endl;
 
     return 0;
 }
