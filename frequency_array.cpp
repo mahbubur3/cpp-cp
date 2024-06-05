@@ -23,7 +23,7 @@ int main() {
     // Show result
     for (int i = 0; i < 26; i++) {
         if (freq[i] != 0) { // Print without count zero
-            cout << "-" << freq[i];
+            cout << char(i + 97) << "-" << freq[i] << endl;
         }
     }
     
