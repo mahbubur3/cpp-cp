@@ -35,10 +35,10 @@ bool cmp(Freq x, Freq y) {
         }
     }
     // Shortcut
-    // if (x.count == b.count) {
-    //     return x.value < b.value;
+    // if (x.count == y.count) {
+    //     return x.value < y.value;
     // } else {
-    //     return x.count > b.count;
+    //     return x.count > y.count;
     // }
 }
 
@@ -86,5 +86,47 @@ int main() {
         }
     }
     
+    return 0;
+}
+
+
+// Repeat
+class Text {
+    public:
+        char alpha;
+        int count;
+};
+
+bool cmp(Text x, Text y) {
+    if (x.count == y.count) {
+        return x.alpha < y.alpha;
+    } else {
+        return x.count > y.count;
+    }
+}
+
+int main() {
+    string s;
+    cin >> s;
+    
+    Text a[26];
+    for (int i = 0; i < 26; i++) {
+        a[i].alpha = char(i + 97);
+        a[i].count = 0;
+    }
+    
+    for (char c : s) {
+        int asciiValue = int(c - 97);
+        a[asciiValue].count++;
+    }
+    
+    sort(a, a + 26, cmp);
+    
+    for (int i = 0; i < 26; i++) {
+        for (int j = 0; j < a[i].count; j++) {
+            cout << a[i].alpha;
+        }
+    }
+
     return 0;
 }
