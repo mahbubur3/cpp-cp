@@ -1,15 +1,16 @@
-// #include <iostream>
-// #include <iomanip>
-// #include <algorithm>
-// #include <utility>
-// #include <string.h>
-// #include <string> or
-#include <bits/stdc++.h> // Group header file
+#include <iostream>
+#include <iomanip>
+#include <algorithm>
+#include <utility>
+#include <string.h>
+#include <string>
+// #include <bits/stdc++.h> // Group header file
+
 using namespace std;
 
 
-//! Show output
-/* int main() {
+// Show output
+int main() {
     // cout << "Hello Mac!";
 
     int n = 100;
@@ -28,11 +29,11 @@ using namespace std;
     cout << "My rank is " << n << " and character is " << c << endl;
 
     return 0;
-} */
+}
 
 
 //! Take input
-/* int main() {
+int main() {
     // int n;
     // cin >> n;
     // cout << n << endl;
@@ -43,9 +44,9 @@ using namespace std;
     cout << a << " " << b << endl;
 
     return 0;
-} */
+}
 
-/* int main() {
+int main() {
     int age;
     char initial;
 
@@ -59,18 +60,20 @@ using namespace std;
     cout << initial << endl;
 
     return 0;
-} */
-/* int main() {
+}
+
+
+int main() {
     char c;
     cin >> c;
     cout << c << endl;
 
     return 0;
-} */
+} 
 
 
-//! Type casting
-/* int main() {
+// Type casting
+int main() {
     // Show ascii value
     // char c;
     // cin >> c;
@@ -82,20 +85,20 @@ using namespace std;
     cout << int(c) << endl;
 
     return 0;
-} */
+}
 
 
-//! EOF in C or Test case
-/* int main() {
+// EOF in C or Test case
+int main() {
     int a, b;
     while (scanf("%d %d", &a, &b) != EOF) {
         printf("%d %d", a, b);
     }
 
     return 0;
-} */
+}
 
-/* //! EOF in C
+// EOF in C
 int main() {
     int a, b;
     while (cin >> a >> b) {
@@ -103,11 +106,11 @@ int main() {
     }
 
     return 0;
-} */
+}
 
 
-//! Setprecision (Show number after decimal) [Note: need <iomanip> header file]
-/* int main() {
+// Setprecision (Show number after decimal) [Note: need <iomanip> header file]
+int main() {
     double n;
     cin >> n;
     cout << fixed << setprecision(2) << n << endl;
@@ -117,11 +120,11 @@ int main() {
     cout << fixed << setprecision(3) << n2 << endl;
 
     return 0;
-} */
+}
 
 
-//! If Else
-/* int main() {
+// If Else
+int main() {
     int a, b;
     cin >> a >> b;
 
@@ -132,9 +135,9 @@ int main() {
     }
 
     return 0;
-} */
+}
 
-/* int main() {
+int main() {
     int x, y;
     cin >> x >> y;
 
@@ -145,31 +148,31 @@ int main() {
     }
 
     return 0;
-} */
+}
 
 
-//! Ternary operator
-/* int main() {
+// Ternary operator
+int main() {
     int x, y;
     cin >> x >> y;
 
     (x == y) ? cout << "Equal" << endl : cout << "Not Equal" << endl;
 
     return 0;
-} */
+}
 
-/* int main() {
+int main() {
     int n;
     cin >> n;
 
     (n % 2 == 0) ? cout << "Even" : cout << "Odd";
 
     return 0;
-} */
+}
 
 
-//! Switch case
-/* int main() {
+// Switch case
+int main() {
     int n = 3;
 
     if (n == 1) {
@@ -187,9 +190,9 @@ int main() {
     }
 
     return 0;
-} */
+}
 
-/* 
+
 switch (expression) {
   case value1:
     // code to execute if expression == value1
@@ -206,9 +209,9 @@ expression: এটি একটি ভেরিয়েবল যা একট�
 case: প্রতিটি case লেবেলটি একটি মান নির্দেশ করে যার সাথে expression এর মান তুলনা করা হয়।
 break: break স্টেটমেন্টটি নিশ্চিত করে যে একবার একটি case ম্যাচ হয়, তাহলে পরবর্তী case গুলো আর চালানো হয় না।
 default: default লেবেলটি ঐ ক্ষেত্রে কোড চালানোর জন্য যেখানে expression এর মান কোনো case লেবেলের সাথে মেলে না।
-*/
 
-/* int main() {
+
+int main() {
     int n = 4;
 
     switch (n) {
@@ -232,9 +235,9 @@ default: default লেবেলটি ঐ ক্ষেত্রে কোড �
     }
 
     return 0;
-} */
-
-/* int main() {
+}
+    
+int main() {
     int n;
     cin >> n;
 
@@ -248,9 +251,9 @@ default: default লেবেলটি ঐ ক্ষেত্রে কোড �
     }
 
     return 0;
-} */
+}
 
-/* int main() {
+int main() {
     char grade = 'A';
 
     switch (grade) {
@@ -268,7 +271,7 @@ default: default লেবেলটি ঐ ক্ষেত্রে কোড �
     }
 
     return 0;
-} */
+}
 /*
 grade ভেরিয়েবলটির মান 'A'।
 switch স্টেটমেন্টটি grade এর মানের সাথে case লেবেলগুলির সাথে তুলনা করে।
@@ -276,7 +279,7 @@ switch স্টেটমেন্টটি grade এর মানের সা�
 break স্টেটমেন্টটি নিশ্চিত করে যে পরবর্তী case গুলো চালানো হয় না।
 */
 
-/* int main() {
+int main() {
     char c;
     cin >> c;
 
@@ -301,12 +304,12 @@ break স্টেটমেন্টটি নিশ্চিত করে য�
     }
 
     return 0;
-} */
+}
 
 
-//! Built-in functions
+// Built-in functions
 // min() & max()
-/* int main() {
+int main() {
     int x, y;
     cin >> x >> y;
 
@@ -316,9 +319,9 @@ break স্টেটমেন্টটি নিশ্চিত করে য�
     cout << minimum << " " << maximum;
 
     return 0;
-} */
+}
 
-/* int main() {
+int main() {
     int a, b, c, d;
     cin >> a >> b >> c >> d;
 
@@ -326,9 +329,10 @@ break স্টেটমেন্টটি নিশ্চিত করে য�
     cout << findMaximum << endl;
 
     return 0;
-} */
+}
 
-/* void swapNumbers(int *a, int *b) {
+
+void swapNumbers(int *a, int *b) {
     int temp = *a;
     *a = *b;
     *b = temp;
@@ -341,10 +345,10 @@ int main() {
     cout << a << " " << b << endl;
 
     return 0;
-} */
+}
 
 
-/* int main() {
+int main() {
     int a, b;
     cin >> a >> b;
 
@@ -352,11 +356,11 @@ int main() {
     cout << a << " " << b << endl;
 
     return 0;
-} */
+}
 
 
-//! Array input
-/* int main() {
+// Array input
+int main() {
     int n;
     cin >> n;
 
@@ -370,10 +374,10 @@ int main() {
     }
 
     return 0;
-} */
+}
 
-//! String
-/* int main() {
+// String
+int main() {
     char name[20];
     cin >> name;
     // cout << name << endl;
@@ -382,20 +386,20 @@ int main() {
     cout << strlen(name) << endl;
 
     return 0;
-} */
+}
 
-//? Input string with space. In C we use fgets but in c++ we use cin.getline()
-/* int main() {
+// Input string with space. In C we use fgets but in c++ we use cin.getline()
+int main() {
     char name[20];
     cin.getline(name, 50); //? [Note: need <string> header file]
     cout << name;
 
     return 0;
-} */
+}
 
 
-//? If i need integer and string with space after integer i need getchar()
-/* int main() {
+// If i need integer and string with space after integer i need getchar()
+int main() {
     int age;
     cin >> age;
 
@@ -407,10 +411,10 @@ int main() {
     cout << "Name: " << name << endl;
 
     return 0;
-} */
+}
 
 
-//? But if i need just string after integer without space just use simple way to take input
+// But if i need just string after integer without space just use simple way to take input
 int main() {
     int age;
     cin >> age;
