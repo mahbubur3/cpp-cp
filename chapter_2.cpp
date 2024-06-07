@@ -1,31 +1,31 @@
 #include <bits/stdc++.h>
+
 using namespace std;
 
 
 // Dynamic variable
-// int main() {
-//     int *a = new int;
-//     *a = 10;
-//     cout << a << endl; // address
-//     cout << *a << endl; // value
+int main() {
+    int *a = new int;
+    *a = 10;
+    cout << a << endl; // address
+    cout << *a << endl; // value
     
-//     return 0;
-// }
+    return 0;
+}
 
 
 // Delete dynamic memory
-// int main() {
-//     int n* = new int;
-//     *n = 10;
-//     cout << *n << endl;
-//     delete n;
+int main() {
+    int n* = new int;
+    *n = 10;
+    cout << *n << endl;
+    delete n;
     
-//     return 0;
-// }
+    return 0;
+}
 
 
 // Using function
-/*
 int * fun() {
     int *a = new int;
     *a = 100;
@@ -40,7 +40,6 @@ int main() {
     
     return 0;
 }
-*/
 
 
 // create dynamic array
@@ -214,20 +213,20 @@ int main()  {
 }
 
 
-// int main() {
-//     long long int x, y;
-//     cin >> x >> y;
+int main() {
+    long long int x, y;
+    cin >> x >> y;
  
-//     int summation = x + y;
-//     long long int multiplication = x * y;
-//     int subtraction = x - y;
+    int summation = x + y;
+    long long int multiplication = x * y;
+    int subtraction = x - y;
  
-//     cout << x << " + " << y << " = " << summation << endl;
-//     cout << x << " * " << y << " = " << multiplication << endl;
-//     cout << x << " - " << y << " = " << subtraction << endl;
+    cout << x << " + " << y << " = " << summation << endl;
+    cout << x << " * " << y << " = " << multiplication << endl;
+    cout << x << " - " << y << " = " << subtraction << endl;
  
-//     return 0;
-// }
+    return 0;
+}
 
 
 int main() {
